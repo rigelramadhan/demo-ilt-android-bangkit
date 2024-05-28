@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.myunlimitedquotes.databinding.ItemQuoteBinding
 import com.dicoding.myunlimitedquotes.network.QuoteResponseItem
 
-// TODO ubah kelas induk pada QuoteListAdapter menjadi PagingDataAdapter
 class QuoteListAdapter :
     ListAdapter<QuoteResponseItem, QuoteListAdapter.MyViewHolder>(DIFF_CALLBACK) {
 

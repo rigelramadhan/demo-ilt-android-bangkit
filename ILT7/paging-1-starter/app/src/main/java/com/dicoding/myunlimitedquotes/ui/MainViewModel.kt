@@ -11,7 +11,6 @@ import com.dicoding.myunlimitedquotes.di.Injection
 import com.dicoding.myunlimitedquotes.network.QuoteResponseItem
 import kotlinx.coroutines.launch
 
-// TODO buka bagian kelas MainViewModel dan ubahlah isinya
 class MainViewModel(private val quoteRepository: QuoteRepository) : ViewModel() {
     private val _quote = MutableLiveData<List<QuoteResponseItem>>()
     var quote: LiveData<List<QuoteResponseItem>> = _quote
