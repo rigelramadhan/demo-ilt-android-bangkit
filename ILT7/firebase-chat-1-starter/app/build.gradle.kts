@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     // Add Plugin
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -54,4 +55,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     // Add Dependency
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.bundles.firebase)
+    implementation(libs.bundles.credential)
+    implementation(libs.lifecycle.runtime)
 }
